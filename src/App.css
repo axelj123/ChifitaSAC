@@ -1,0 +1,33 @@
+/*/App.css*/
+body{
+   font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 400;
+  }
+  .overflow-container {
+    overflow-y: auto; /* Asegúrate de que el contenido pueda hacer scroll */
+    height: 100vh; /* O define una altura para activar el scroll */
+  }
+  
+  .overflow-container::-webkit-scrollbar {
+    width: 7px;
+    background: #fff;
+  }
+  
+  /* Estilo para la pista (track) de la barra de desplazamiento */
+  .overflow-container::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Color de fondo de la pista */
+  }
+  
+  /* Estilo para el "thumb" (parte que se mueve) de la barra de desplazamiento */
+  .overflow-container::-webkit-scrollbar-thumb {
+    background: #ff6e42; /* Color del thumb */
+    border-radius: 10px; /* Bordes redondeados */
+  }
+  
+  /* Color del thumb al pasar el mouse por encima */
+  .overflow-container::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color más oscuro al pasar el mouse */
+  }
+  

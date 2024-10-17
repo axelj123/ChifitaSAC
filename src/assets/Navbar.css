@@ -1,0 +1,65 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  height: 70px;
+  left: 0;
+  justify-content: center;
+  padding-top: 1.0rem;
+  background: transparent;
+  padding-bottom: 1.0rem;
+  transition: background-color 0.3s; /* Transición suave para el fondo */
+z-index: 9999;
+}
+.navbar.scrolled {
+  background-color: blue; /* Color de la navbar cuando haces scroll */
+}
+
+.contenedor-nav {
+  display: flex;
+  width: 70%;
+  align-items: center;
+
+
+  justify-content: space-between;
+
+}
+
+.navbar-logo img {
+  width: 100px;
+}
+
+.flexible-space {
+  flex-grow: 1; /* Este elemento ocupará todo el espacio restante */
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+ 
+
+}
+
+.navbar-links a {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0 6px;
+  padding-right: 0.8rem;
+  padding-left: 0.8rem;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.navbar-button {
+  background-color: #ff6e42;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  cursor: pointer;
+}
