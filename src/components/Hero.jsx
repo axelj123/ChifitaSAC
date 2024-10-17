@@ -4,6 +4,7 @@ import '../assets/Hero.css';
 function Hero() {
   return (
     <header className="hero">
+      
       <div className="hero-overlay"></div>
       <h1 className="hero-subtitle">Industria de alimentos Guerra S.A.C</h1>
       <h2 className="hero-title">SALSAS CHIFITA</h2>

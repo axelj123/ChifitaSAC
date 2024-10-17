@@ -1,5 +1,5 @@
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   display: flex;
@@ -8,24 +8,32 @@
   height: 70px;
   left: 0;
   justify-content: center;
-  padding-top: 1.0rem;
+  padding-top: 1rem;
   background: transparent;
-  padding-bottom: 1.0rem;
-  transition: background-color 0.3s; /* Transición suave para el fondo */
-z-index: 9999;
+  padding-bottom: 1rem;
+  padding: 20px;
+  transition: background-color 0.3s ease, height 0.4s ease, padding 0.4s ease;
 }
+
 .navbar.scrolled {
-  background-color: blue; /* Color de la navbar cuando haces scroll */
+  background-color: rgba(255, 255, 255, 0.95); /* Color de la navbar cuando haces scroll */
+  height: 40px; /* Asegúrate de que esta altura sea visible */
+ 
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil debajo de la navbar */
+}
+
+.navbar.scrolled .navbar-links li a {
+  color: #000000;
+}
+.navbar.scrolled .navbar-links li:last-child a {
+  color: white;
 }
 
 .contenedor-nav {
   display: flex;
   width: 70%;
   align-items: center;
-
-
   justify-content: space-between;
-
 }
 
 .navbar-logo img {
@@ -40,8 +48,6 @@ z-index: 9999;
   list-style: none;
   display: flex;
   margin: 0;
- 
-
 }
 
 .navbar-links a {
@@ -56,7 +62,7 @@ z-index: 9999;
 }
 
 .navbar-button {
-  background-color: #ff6e42;
+  background-color: #ff3b0d;
   color: white;
   border: none;
   padding: 0.5rem 1rem;
